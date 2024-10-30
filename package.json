@@ -4,9 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "json-server":"json-server --watch asset/db/db.json --port 3001"
+    "json-server": "json-server --watch asset/db/db.json --port 3001"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
 }
