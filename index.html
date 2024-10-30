@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="./asset/css/style.css" type="text/css">
+  <title>HRMS</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <h1 class="navbar-brand text-white" id="system_title">HR Management System</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input type="search" class="form-control mr-sm-2"  id="search_text" placeholder="Search">
+        <button type="button" class="btn btn-outline-light my-2 my-sm-0" id="search_btn" >Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <form>
+      <div class="form-row align-items-center justify-content-between">
+        <div class="col-sm-3 my-1">
+          <label  for="user_name">名前</label>
+          <input type="text" class="form-control" id="user_name" placeholder="入力してください">
+        </div>
+        <div class="col-sm-4 my-1">
+          <label  for="mail_address">メールアドレス</label>
+          <input type="mail" class="form-control " id="mail_address" placeholder="入力してください">
+        </div>
+        <div class="form-group col-sm-3 my-1">
+          <label for="dept_name">部署</label>
+          <select class="form-control" id="dept_name" >
+            <option selected>-</option>
+            <option>開発</option>
+            <option>講師</option>
+            <option>営業</option>
+            <option>人事</option>
+          </select>
+        </div>
+        <div class="col-auto my-1">
+          <button type="button" class="btn btn-primary mt-4" id="add_btn" >登録</button>
+          <button type="button" class="update btn btn-primary mt-4" id="update_btn">更新</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="my-5">
+      <h2 id="table_title">Employee List</h2>
+      <table class="table tabe-hover my-5">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>名前</th>
+            <th>メールアドレス</th>
+            <th>部署</th>
+            <th colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody id="table_body">
+
+
+
+          
+        </tbody>
+      </table>
+    </div>
+  
+
+  </div>
+
+
+  
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="asset/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "user_name": "⼭⽥花太郎",
+      "mail_address": "yamada@exercise.co.jp",
+      "dept_name": "開発"
+    },
+    {
+      "id": 2,
+      "user_name": "鈴⽊⼀郎",
+      "mail_address": "suzuki@exercise.co.jp",
+      "dept_name": "営業"
+    },
+    {
+      "id": 3,
+      "user_name": "⽥中花⼦",
+      "mail_address": "tanaka@exercise.co.jp",
+      "dept_name": "⼈事"
+    }
+  ]
+}
