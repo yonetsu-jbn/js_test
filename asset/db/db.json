@@ -1,22 +1,28 @@
 {
-    "employee": [
+  "employee": [
     {
-    "id": 1,
-    "user_name": "⼭⽥花太郎",
-    "mail_address": "yamada@exercise.co.jp",
-    "dept_name": "開発"
+      "id": 1,
+      "user_name": "⼭⽥花太郎",
+      "mail_address": "yamada@exercise.co.jp",
+      "dept_name": "開発"
     },
     {
-    "id": 2,
-    "user_name": "鈴⽊⼀郎",
-    "mail_address": "suzuki@exercise.co.jp",
-    "dept_name": "営業"
+      "id": 2,
+      "user_name": "鈴⽊⼀郎",
+      "mail_address": "suzuki@exercise.co.jp",
+      "dept_name": "営業"
     },
     {
-    "id": 3,
-    "user_name": "⽥中花⼦",
-    "mail_address": "tanaka@exercise.co.jp",
-    "dept_name": "⼈事"
+      "id": 3,
+      "user_name": "⽥中花⼦",
+      "mail_address": "tanaka@exercise.co.jp",
+      "dept_name": "⼈事"
+    },
+    {
+      "user_name": "太田翔平",
+      "mail_address": "ota.exercice.co.jp",
+      "dept_name": "講師",
+      "id": 4
     }
-    ]
+  ]
 }
