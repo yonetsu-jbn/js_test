@@ -29,7 +29,7 @@
   </nav>
 
   <div class="container my-5">
-    <form>
+    <!-- <form>
       <div class="form-row align-items-center justify-content-between">
         <div class="col-sm-3 my-1">
           <label  for="user_name">名前</label>
@@ -41,6 +41,7 @@
         </div>
         <div class="form-group col-sm-3 my-1">
           <label for="dept_name">部署</label>
+          
           <select class="form-control" id="dept_name" >
             <option selected>-</option>
             <option>開発</option>
@@ -54,7 +55,37 @@
           <button type="button" class="update btn btn-primary mt-4" id="update_btn">更新</button>
         </div>
       </div>
+    </form> -->
+
+    <form name="register_form">
+      <div class="form-row align-items-center justify-content-between">
+        <div class="col-sm-3 my-1">
+          <label  for="user_name">名前</label>
+          <input type="text" name="user_name" class="form-control" id="user_name" placeholder="入力してください">
+        </div>
+        <div class="col-sm-4 my-1">
+          <label  for="mail_address">メールアドレス</label>
+          <input type="mail" name="mail_address" class="form-control " id="mail_address" placeholder="入力してください">
+        </div>
+        <div class="form-group col-sm-3 my-1">
+          <label for="dept_name">部署</label>
+          
+          <select class="form-control" name="dept_name" id="dept_name" >
+            <option selected>-</option>
+            <option>開発</option>
+            <option>講師</option>
+            <option>営業</option>
+            <option>人事</option>
+          </select>
+        </div>
+        <div class="col-auto my-1">
+          <button type="button" class="btn btn-primary mt-4" id="add_btn" >登録</button>
+          <button type="button" class="update btn btn-primary mt-4" id="update_btn">更新</button>
+        </div>
+      </div>
     </form>
+
+    
 
     <div class="my-5">
       <h2 id="table_title">Employee List</h2>
