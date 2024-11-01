@@ -29,8 +29,8 @@ async function getUserData() {
                 <td>${userInfo.user_name}</td>
                 <td>${userInfo.mail_address}</td>
                 <td>${userInfo.dept_name}</td>
-                <button type="button" class="btn btn-success mt-4 m-1" id="edit_btn">編集</button>
-                <button type="button" class="btn btn-danger mt-4 m-1" id="delete_btn" >削除</button></td>
+                <button type="button" class="btn btn-success mt-4 m-1" onclick= "edit_data(this)" >編集</button>
+                <button type="button" class="btn btn-danger mt-4 m-1"  >削除</button></td>
             `;
             // t_body.insertAdjacentHTML('afterbegin', userItem);
             t_body.appendChild(userItem);
@@ -173,5 +173,23 @@ const form = document.getElementById('add_btn');
 
 // })
 
-//7
+//7　編集
+
+function edit_data(e) {
+    // console.log(e);
+    var idx=$(e).closest('tr').prop('rowIndex');
+    console.log(idx);
+};
+
+// $("button").click(function(e) {
+//     var s = $(e.currentTarget).parent().prev().text();
+//     alert(s);
+// });
+
+// $(function(){
+//     $('button').on('click',function(){
+//     var idx=$(this).closest('tr').prop('rowIndex');
+//     console.log(idx);
+//     });
+// });
 
